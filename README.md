@@ -1,210 +1,189 @@
 # 🚀 Web Development Portfolio
 
-*Building Production-Ready Web Applications with Modern Architecture*
+### *Building Production-Ready Web Applications with Modern Architecture*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Projects-0A66C2?style=flat-square)](https://github.com/Sadeeq-Ullah)
-[![Live Demos](https://img.shields.io/badge/Live%20Demos-Explore%20Now-00C7B7?style=flat-square)](https://github.com/Sadeeq-Ullah?tab=repositories)
-[![JavaScript](https://img.shields.io/badge/JavaScript-Expert-F7DF1E?style=flat-square)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Responsive Design](https://img.shields.io/badge/Responsive-100%25-FF6B6B?style=flat-square)]()
+[![Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/Sadeeq-Ullah)
+[![Live Demos](https://img.shields.io/badge/Live%20Demos-View%20All-00C7B7?style=for-the-badge&logo=netlify)](https://github.com/Sadeeq-Ullah?tab=repositories)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sadeeq-khilji/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Expert-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
 
 ---
 
-## 📊 Portfolio at a Glance
+## 📊 Portfolio Metrics
 
 | Metric | Status |
 |--------|--------|
-| **Projects Completed** | 5 Live + 1 In Development |
-| **Live Demos** | ✅ All Projects Deployed |
-| **API Integrations** | Real-time Exchange Rates |
-| **Component Architecture** | Reusable, Scalable Systems |
-| **Code Quality** | ES6+, Modular, Maintainable |
+| **Completed Projects** | 5 Live Demos + 1 In Development |
+| **Deployment** | All Projects Hosted on Netlify |
+| **API Integration** | Real-Time Exchange Rate API |
+| **Architecture** | Component-Based, Data-Driven, Modular |
+| **Code Quality** | ES6+, Semantic HTML5, CSS3 |
 
-[![GitHub Stars](https://img.shields.io/github/stars/Sadeeq-Ullah/Web-Dev-Projects?style=flat-square)](https://github.com/Sadeeq-Ullah/Web-Dev-Projects/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Sadeeq-Ullah/Web-Dev-Projects?style=flat-square)](https://github.com/Sadeeq-Ullah/Web-Dev-Projects/network/members)
-[![GitHub Watchers](https://img.shields.io/github/watchers/Sadeeq-Ullah/Web-Dev-Projects?style=flat-square)](https://github.com/Sadeeq-Ullah/Web-Dev-Projects/watchers)
+[![GitHub Stars](https://img.shields.io/github/stars/Sadeeq-Ullah/Web-Dev-Projects?style=social)](https://github.com/Sadeeq-Ullah/Web-Dev-Projects/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Sadeeq-Ullah/Web-Dev-Projects?style=social)](https://github.com/Sadeeq-Ullah/Web-Dev-Projects/network/members)
 
 ---
 
 ## 🎯 Executive Summary
 
-A comprehensive collection of production-grade web applications demonstrating expertise in **modern JavaScript**, **API integration**, **component-based architecture**, and **responsive design**. Each project solves real-world business problems with clean code, intuitive user interfaces, and scalable solutions.
+A professional portfolio of production-grade web applications demonstrating expertise in **modern JavaScript**, **RESTful API integration**, **component-based architecture**, and **responsive design**. Each project is fully deployed, solves real-world business challenges, and follows clean code principles.
 
-**What This Portfolio Demonstrates:**
-- ✅ Full Development Lifecycle - From concept to deployment
-- ✅ API Integration Expertise - Real-time data handling
-- ✅ Modern Architecture - Reusable components, data-driven design
-- ✅ User-Centric Approach - Responsive, accessible interfaces
-- ✅ Production Readiness - All projects live and functional
+**Core Competencies:**
+- ✅ Full Development Lifecycle (Concept → Deployment)
+- ✅ API-Driven Applications (Real-Time Data)
+- ✅ Scalable Frontend Architecture
+- ✅ User-Centric, Responsive Design
+- ✅ Production-Ready Code
 
 ---
 
 ## 🌟 Featured Projects
 
 ### 1. Currency Converter 💱
-*Real-Time Global Currency Conversion System*
+**Real-Time Global Currency Conversion System**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-00C7B7?style=flat-square)](https://currencyconvert122od4.netlify.app/)
-[![API](https://img.shields.io/badge/API-ExchangeRate--v6-FF6B6B?style=flat-square)](https://exchangerate-api.com/)
-[![Tech](https://img.shields.io/badge/Tech-JavaScript%20%7C%20CSS%20%7C%20FlagsAPI-FFD93D?style=flat-square)]()
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-2ea44f?style=for-the-badge&logo=netlify)](https://currencyconvert122od4.netlify.app/)
+[![API](https://img.shields.io/badge/API-ExchangeRate--v6-1e3c72?style=flat-square)](https://exchangerate-api.com/)
 
-**Business Value:** Enables global financial operations with real-time conversion across 160+ currencies. Perfect for travel agencies, e-commerce platforms, and international businesses.
+**Business Value:** Enables instant, accurate financial conversions for travel, e-commerce, and international business operations.
 
 **Key Features:**
-- 🔄 Real-time exchange rates via professional API integration
-- 🌍 160+ currencies with visual country flags for quick identification
-- ⚡ Instant conversions with input validation and error handling
-- 📱 Fully responsive - works seamlessly on desktop and mobile
-- 🎯 Smart defaults - Pre-loaded USD to PKR on page load
+- 🔄 Real-time exchange rates via professional API
+- 🌍 160+ currencies with country flags for instant recognition
+- ⚡ Input validation & error handling for reliability
+- 📱 Fully responsive across all devices
 
-**Technical Highlights:**
-- Asynchronous API calls with error handling
-- Dynamic dropdown population from API data
-- Flag integration using FlagsAPI for enhanced UX
+**Tools & Technologies:** `JavaScript (ES6+)` `CSS3` `ExchangeRate-API` `FlagsAPI` `Fetch API` `HTML5`
 
 ---
 
 ### 2. Furni E-Commerce 🛒
-*Scalable Multi-Page Shopping Platform*
+**Scalable Multi-Page Shopping Platform**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Store-00C7B7?style=flat-square)](https://sofastorewebsite321.netlify.app/)
-[![Architecture](https://img.shields.io/badge/Architecture-Component%20Based-4CAF50?style=flat-square)]()
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Shop%20Now-2ea44f?style=for-the-badge&logo=netlify)](https://sofastorewebsite321.netlify.app/)
+[![Architecture](https://img.shields.io/badge/Architecture-Component%20Based-4c1e3f?style=flat-square)]()
 
-**Business Value:** Demonstrates scalable e-commerce architecture without heavy frameworks. Perfect for startups needing lightweight, maintainable solutions.
+**Business Value:** A lightweight, maintainable e-commerce solution without heavy frameworks—ideal for startups and rapid deployment.
 
 **Key Features:**
-- 🧩 Component-based architecture - Reusable navbar and footer loaded dynamically
-- 🧠 Smart routing logic - Adapts content based on page type (home vs. shop)
-- 📊 Data-driven design - All content managed through centralized JSON
-- 🏪 Dynamic product rendering - Featured items on homepage, full catalog on shop page
-- 📱 Mobile-optimized - Seamless shopping experience across devices
+- 🧩 Component-based architecture (reusable navbar/footer)
+- 🧠 Smart routing (home vs. shop content adaptation)
+- 📊 Data-driven UI via centralized JSON
+- 🏪 Dynamic product rendering with templates
 
-**Technical Highlights:**
-- ES6 Modules for organized data management
-- Fetch API for asynchronous component loading
-- Template cloning for efficient DOM manipulation
+**Tools & Technologies:** `JavaScript (ES6+)` `CSS3` `HTML5` `Fetch API` `JSON` `ES6 Modules`
 
 ---
 
 ### 3. JS Documentation Hub 📚
-*Professional Technical Documentation System*
+**Professional Technical Documentation System**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Read%20Docs-00C7B7?style=flat-square)](https://jsdocument213.netlify.app/)
-!HTML5 !CSS3 !Netlify
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Read%20Docs-2ea44f?style=for-the-badge&logo=netlify)](https://jsdocument213.netlify.app/)
 
-**Business Value:** Enterprise-grade documentation structure similar to MDN or React docs. Essential for software companies needing clear technical references.
+**Business Value:** Enterprise-grade documentation structure—similar to MDN or React docs—essential for software teams and technical products.
 
 **Key Features:**
-- 📖 Fixed navigation sidebar - Always accessible while scrolling
-- 💻 Code highlighting - Distinct visual treatment for code blocks
-- 📱 Adaptive layout - Sidebar transforms to top navigation on mobile
-- 🎨 Clean typography - Optimized for readability and information hierarchy
+- 📖 Fixed navigation sidebar for seamless reference
+- 💻 Distinct code block styling for readability
+- 📱 Adaptive layout (sidebar → top nav on mobile)
+- 🎨 Clean typography and information hierarchy
 
-**Technical Highlights:**
-- CSS positioning strategies (fixed, relative)
-- Media queries for responsive behavior
-- Semantic HTML5 structure for accessibility
+**Tools & Technologies:** `HTML5` `CSS3` `Media Queries` `Positioning (Fixed/Relative)`
 
 ---
 
 ### 4. Serem Landing Page ✨
-*High-Conversion Marketing Interface*
+**High-Conversion Marketing Interface**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Serem-00C7B7?style=flat-square)](https://seremlanpage.netlify.app/)
-!HTML5 !CSS3 !Netlify
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Explore%20Serem-2ea44f?style=for-the-badge&logo=netlify)](https://seremlanpage.netlify.app/)
 
-**Business Value:** Converts visitors to customers through strategic visual hierarchy and compelling CTAs. Ideal for product launches and marketing campaigns.
+**Business Value:** Drives conversions through strategic visual hierarchy, compelling CTAs, and modern design—ideal for product launches.
 
 **Key Features:**
-- 🎯 Strategic CTA placement - Optimized conversion paths
-- 🎨 Modern aesthetics - Distinct color palette and typography
-- 📐 Grid & Flexbox mastery - Precise element alignment
-- 📱 Responsive typography - Text scales beautifully across devices
+- 🎯 Optimized CTA placement for conversion
+- 🎨 Distinct color palette & modern typography
+- 📐 CSS Grid & Flexbox for precise alignment
+- 📱 Responsive typography across devices
 
-**Technical Highlights:**
-- CSS Grid and Flexbox combinations
-- Mobile-first responsive design
-- Visual hierarchy principles
+**Tools & Technologies:** `HTML5` `CSS3` `CSS Grid` `Flexbox` `Media Queries`
 
 ---
 
 ### 5. Tech Company Landing Page 💻
-*Corporate Identity & Trust Building*
+**Corporate Identity & Trust Building**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Launch%20Site-00C7B7?style=flat-square)](https://techcomppage.netlify.app/)
-!HTML5 !CSS3 !Netlify
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Launch%20Site-2ea44f?style=for-the-badge&logo=netlify)](https://techcomppage.netlify.app/)
 
-**Business Value:** Establishes credibility and professionalism for tech companies. Showcases services, features, and testimonials in a structured format.
+**Business Value:** Establishes credibility with a clean, professional layout—showcasing services, features, and testimonials effectively.
 
 **Key Features:**
-- 🏢 Corporate aesthetic - Clean, minimalist design
-- 📊 Service showcase - Clearly defined sections for offerings
-- ⭐ Social proof - Testimonials and trust indicators
-- 📱 Fully responsive - Optimized for all screen sizes
+- 🏢 Corporate, minimalist design
+- 📊 Structured service and feature sections
+- ⭐ Testimonials for social proof
+- 📱 Fully responsive across all screen sizes
 
-**Technical Highlights:**
-- Whitespace and readability optimization
-- Structured content hierarchy
-- Cross-browser compatibility
+**Tools & Technologies:** `HTML5` `CSS3` `Flexbox` `Responsive Design`
 
 ---
 
 ### 6. Travel Booking Platform 🌍
-*Coming Soon - Under Active Development*
+*Coming Soon — Under Active Development*
 
-[![Status](https://img.shields.io/badge/Status-In%20Development-FFA500?style=flat-square)]()
+[![Status](https://img.shields.io/badge/Status-In%20Development-FFA500?style=for-the-badge)]()
 
 **Planned Features:**
-- 🏨 Hotel booking system with real-time availability
-- ✈️ Flight search integration with multiple airline APIs
-- 🗺️ Interactive maps for destination exploration
+- 🏨 Hotel booking with real-time availability
+- ✈️ Flight search via multiple airline APIs
+- 🗺️ Interactive destination maps
 - 💳 Secure payment gateway integration
-- 📱 Mobile-first experience with offline capabilities
+- 📱 Offline-capable mobile experience
 
 *Expected Launch: Q2 2026*
 
 ---
 
-## 🛠️ Technical Stack & Expertise
+## 🛠️ Technical Stack Overview
 
 | Category | Technologies |
 |----------|--------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6+), Responsive Design |
-| **Architecture** | Component-Based, Modular Design, Data-Driven Rendering |
-| **APIs & Integration** | REST APIs, ExchangeRate-API, FlagsAPI, Fetch API |
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+), Responsive/Mobile-First Design |
+| **Architecture** | Component-Based, Modular, Data-Driven Rendering |
+| **API & Data** | REST APIs, ExchangeRate-API, FlagsAPI, Fetch API, JSON |
 | **Styling** | CSS Grid, Flexbox, Media Queries, Animations |
-| **Deployment** | Netlify, GitHub Pages, CI/CD Ready |
+| **Deployment** | Netlify, Git, GitHub Pages |
 | **Code Quality** | ES6 Modules, Semantic HTML, Accessibility Standards |
 
 ---
 
 ## 📈 Development Philosophy
 
-I build software that **businesses can rely on**:
+I build software that businesses can deploy with confidence:
 
-- **Production-Ready** - Every project is deployed and functional
-- **Scalable Architecture** - Component-based systems that grow with your needs
-- **Maintainable Code** - Clean, documented, and modular
-- **User-Focused** - Intuitive interfaces with responsive design
-- **Performance Optimized** - Fast load times and smooth interactions
+- **Production-Ready** — Every project is live, tested, and functional
+- **Scalable** — Component-based systems designed to grow
+- **Maintainable** — Clean, documented, modular code
+- **User-Focused** — Intuitive interfaces with responsive design
+- **Performance-Oriented** — Fast load times and smooth interactions
 
 ---
 
-## 🚀 Quick Access
+## 🚀 Quick Access — Live Demos
 
-| Project | Live Demo | Use Case |
-|---------|-----------|----------|
-| Furni E-Commerce | [Visit](https://sofastorewebsite321.netlify.app/) | Online Retail |
-| JS Documentation | [Visit](https://jsdocument213.netlify.app/) | Technical References |
-| Serem Landing Page | [Visit](https://seremlanpage.netlify.app/) | Marketing Campaigns |
-| Currency Converter | [Visit](https://currencyconvert122od4.netlify.app/) | Financial Applications |
-| Tech Company Page | [Visit](https://techcomppage.netlify.app/) | Corporate Websites |
+| Project | Live Demo |
+|---------|----------|
+| **Currency Converter** | [![Live Demo](https://img.shields.io/badge/Try%20Converter-2ea44f?style=flat-square&logo=netlify)](https://currencyconvert122od4.netlify.app/) |
+| **Furni E-Commerce** | [![Live Demo](https://img.shields.io/badge/Shop%20Now-2ea44f?style=flat-square&logo=netlify)](https://sofastorewebsite321.netlify.app/) |
+| **JS Documentation** | [![Live Demo](https://img.shields.io/badge/Read%20Docs-2ea44f?style=flat-square&logo=netlify)](https://jsdocument213.netlify.app/) |
+| **Serem Landing Page** | [![Live Demo](https://img.shields.io/badge/View%20Serem-2ea44f?style=flat-square&logo=netlify)](https://seremlanpage.netlify.app/) |
+| **Tech Company Page** | [![Live Demo](https://img.shields.io/badge/Launch%20Site-2ea44f?style=flat-square&logo=netlify)](https://techcomppage.netlify.app/) |
 
 ---
 
 ## 📫 Connect & Collaborate
 
-[![GitHub](https://img.shields.io/badge/GitHub-Sadeeq--Ullah-181717?style=flat-square)](https://github.com/Sadeeq-Ullah)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View%20Projects-0A66C2?style=flat-square)](https://github.com/Sadeeq-Ullah?tab=repositories)
+[![GitHub](https://img.shields.io/badge/GitHub-Sadeeq--Ullah-181717?style=for-the-badge&logo=github)](https://github.com/Sadeeq-Ullah)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sadeeq%20Khilji-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sadeeq-khilji/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-All%20Projects-0A66C2?style=for-the-badge&logo=github)](https://github.com/Sadeeq-Ullah?tab=repositories)
 
 **Open for:** Web Development Projects | Technical Consultation | Collaborative Opportunities
 
@@ -212,6 +191,6 @@ I build software that **businesses can rely on**:
 
 *"Building scalable, production-ready web applications that drive business results."*
 
-**⭐ Star this repository to show your support!**
+**⭐ Star this repository to support this work!**
 
 *Last Updated: March 2026*
