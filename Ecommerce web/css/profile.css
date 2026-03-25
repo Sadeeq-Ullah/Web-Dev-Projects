@@ -1,0 +1,247 @@
+/* === Global Design Tokens === */
+:root {
+    --min-gap: 1rem;
+    --mid-gap: 2rem;
+    --max-gap: 3rem;
+    --main-bg-color: #3b5d50;
+    --let-spac: 0.5px;
+    --prim-color: white;
+    --text-color: #6a6a6a;
+    --font-color: #2f2f2f;
+    --border-maxrad: 30px;
+    --border-minrad: 20px;
+    --min-fz: 1rem;
+}
+
+/* === Account Cards Layout === */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    align-items: flex-start;
+    padding: 8rem 2rem;
+    flex-wrap: wrap;
+}
+
+.normal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--min-gap);
+    width: 43%;
+    padding: 4.5rem 0;
+    border: 1px solid var(--text-color);
+    color: var(--prim-color);
+    border-radius: var(--border-minrad);
+    background-color: var(--main-bg-color);
+}
+
+.normal-card .account-para {
+    font-size: 1em;
+}
+
+.normal-card .account-heading a {
+    font-size: 1.1em;
+    color: var(--prim-color);
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid var(--prim-color);
+}
+
+.normal-card .main-image {
+    width: 85%;
+    margin-top: 1.5rem;
+}
+
+/* === Sign In Form === */
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-minrad);
+    width: 38%;
+    padding: 5em 3rem;
+    background-color: var(--prim-color);
+    gap: var(--mid-gap);
+}
+
+.form-title {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sign-in .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    color: var(--text-color);
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    font-size: calc(1rem - 1px);
+}
+
+.form-field input::placeholder {
+    font-size: 14px;
+}
+
+/* Focus ring using brand color */
+.form-field input:focus {
+    outline: none;
+    border-color: var(--main-bg-color);
+    box-shadow: 0 0 0 3px rgba(51, 194, 139, 0.384) inset;
+}
+
+.form-field label {
+    font-size: calc(1rem - 1px);
+    color: var(--font-color);
+}
+
+.submit-button {
+    padding: 1rem 2.5rem;
+    margin-top: 3rem;
+    background-color: black;
+    color: var(--prim-color);
+    border: none;
+    border-radius: var(--border-maxrad);
+    font-size: var(--min-fz);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* === Registration Form === */
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-minrad);
+    background-color: var(--prim-color);
+    width: 41%;
+    padding: 5em 3rem;
+    gap: var(--mid-gap);
+}
+
+.sign-up .form-names {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--min-gap);
+    font-size: calc(1rem - 1px);
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+input[type="date"] {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* === Mobile — max 550px === */
+@media (min-width: 200px) and (max-width: 550px) {
+    .cards-section {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 8rem 1rem;
+    }
+
+    .normal-card {
+        width: 100%;
+    }
+
+    .normal-card .account-para {
+        font-size: 0.9em;
+    }
+
+    .normal-card .account-heading a {
+        font-size: 1em;
+    }
+
+    .sign-up .form-names {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sign-up .form-names .form-field {
+        width: 100%;
+    }
+
+    .sign-up {
+        width: 100%;
+        padding: 5em 2.5rem;
+    }
+
+    .sign-in {
+        width: 100%;
+        padding: 5em 3rem;
+    }
+}
+
+/* === Tablet — 550px to 800px === */
+@media (min-width: 550px) and (max-width: 800px) {
+    .cards-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .normal-card {
+        width: 80%;
+    }
+
+    .normal-card .account-para {
+        font-size: 0.9em;
+    }
+
+    .normal-card .account-heading a {
+        font-size: 1em;
+    }
+
+    .sign-up .form-names .form-field {
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .sign-up {
+        width: 80%;
+        padding: 5em 3rem;
+    }
+
+    .sign-in {
+        width: 80%;
+        padding: 5em 3rem;
+    }
+}
+
+/* === Hover States (pointer devices only) === */
+@media (hover: hover) {
+    .normal-card .account-heading a:hover {
+        border-bottom: none;
+    }
+
+    .submit-button:hover {
+        background-color: #4b4b4b;
+    }
+}

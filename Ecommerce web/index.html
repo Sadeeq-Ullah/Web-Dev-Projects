@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ecommerce web/img/favicon.png" type="image">
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <title>Home - Furni.</title>
+</head>
+
+<body>
+    <!-- Injected via sync.js -->
+    <header></header>
+
+    <!-- === Hero Section === -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1 id="hero-heading">Modern Interior Design Studio</h1>
+            <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                vulputate
+                velit imperdiet dolor tempor tristique.</div>
+            <div class="buttons">
+                <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                <button id="explore">Explore</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/Ecommerce web/img/couch.png" alt="">
+        </div>
+    </div>
+
+    <!-- === Featured Products === -->
+    <div class="products-showcase">
+        <div class="content">
+            <h1 class="cont-head">Crafted with excellent material.</h1>
+            <p class="cont-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                vulputate velit imperdiet dolor tempor tristique.</p>
+            <button class="btn-cont">Explore</button>
+        </div>
+
+        <!-- Populated dynamically via script.js -->
+        <div id="prod-list"></div>
+
+        <!-- Product card template — cloned per product in JS -->
+        <template id="prod-template">
+            <div class="prod-card">
+                <img src="" alt="" class="product-img">
+                <h3 class="product-title"></h3>
+                <strong class="product-price"></strong>
+                <button class="cart-btn">Add to cart</button>
+            </div>
+        </template>
+    </div>
+
+    <!-- === Services Showcase === -->
+    <div class="services-showcase">
+        <div class="services-cont">
+            <h1 class="serv-head">Services</h1>
+            <p class="serv-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                vulputate.</p>
+
+            <!-- Service icon cards cloned and populated via script.js -->
+            <div id="services-icons">
+                <template id="services-template">
+                    <div class="wrapper-class">
+                        <div class="image-wrap"><img class="service-img" src="" alt="icon svg"></div>
+                        <h2 class="service-text">Fast and Free Shipping</h2>
+                        <p class="main-text">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                            Aliquam
+                            vulputate.</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <!-- Decorative image block with dots overlay -->
+        <div class="services-pics">
+            <img class="dots-pic" src="/Ecommerce web/img/dots-yellow.svg" alt="dots pic">
+            <img class="major-pic" src="/Ecommerce web/img/why-choose-us-img.jpg" alt="main pic">
+        </div>
+    </div>
+
+    <!-- === Help / Why Choose Us Section === -->
+    <div id="help-showcase">
+        <!-- Overlapping image collage — positioned absolutely via CSS -->
+        <div class="showcase-imgs">
+            <img src="/Ecommerce web/img/img-grid-1.jpg" alt="img-grid-1" class="help-img-1">
+            <img src="/Ecommerce web/img/img-grid-2.jpg" alt="img-grid-2" class="help-img-2">
+            <img src="/Ecommerce web/img/img-grid-3.jpg" alt="img-grid-3" class="help-img-3">
+            <img src="/Ecommerce web/img/dots-green.svg" alt="img-grid-4" class="help-img-4">
+        </div>
+
+        <div id="showcase-cont">
+            <h1 class="help-head">We Help You Make Modern Interior Design</h1>
+            <p class="help-para">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus
+                malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+            <div class="shorttxt-lis">
+                <ul>
+                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                </ul>
+            </div>
+            <button class="help-btn">Explore</button>
+        </div>
+    </div>
+
+    <!-- === Featured Chairs Info === -->
+    <!-- Note: chair titles read "Nordic kssdf" — likely placeholder text never replaced -->
+    <div class="chairs-info">
+        <div class="chair-wrapper">
+            <div class="chair-img">
+                <img src="/Ecommerce web/img/product-1.png" alt="chair-img">
+            </div>
+            <div class="chair-cont">
+                <strong class="chair-title">Nordic Chair</strong>
+                <p class="chair-para">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                <div class="read-more">Read more</div>
+            </div>
+        </div>
+        <div class="chair-wrapper">
+            <div class="chair-img">
+                <img src="/Ecommerce web/img/product-2.png" alt="chair-img">
+            </div>
+            <div class="chair-cont">
+                <strong class="chair-title">Nordic Chair</strong>
+                <p class="chair-para">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                <div class="read-more">Read more</div>
+            </div>
+        </div>
+        <div class="chair-wrapper">
+            <div class="chair-img">
+                <img src="/Ecommerce web/img/product-3.png" alt="chair-img">
+            </div>
+            <div class="chair-cont">
+                <strong class="chair-title">Nordic Chair</strong>
+                <p class="chair-para">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                <div class="read-more">Read more</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === Testimonials Section === -->
+    <div class="testimonials-section">
+        <h1 class="test-head">Testimonials</h1>
+        <div class="testimonial-frame">
+            <div class="left" id="left-arrow"><img src="/Ecommerce web/img/right-arrow.png" alt=""></div>
+
+            <!-- Populated dynamically via script.js -->
+            <div class="testimonials-wrapper"></div>
+
+            <!-- Testimonial card template — cloned per entry in JS -->
+            <template class="testimonial-temp">
+                <div class="testimonial-card">
+                    <blockquote>
+                        <p class="test-info">
+                            Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                            odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                            vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. Integer convallis volutpat dui quis
+                            scelerisque.
+                        </p>
+                    </blockquote>
+                    <div class="person-pic">
+                        <img src="" alt="person-pic" class="person-1-img">
+                    </div>
+                    <h3 class="person-title"></h3>
+                    <p class="role">CEO, Co-Founder, XYZ Inc.</p>
+                </div>
+            </template>
+
+            <div class="right" id="right-arrow"><img src="/Ecommerce web/img/right-arrow.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- === Recent Blog Section === -->
+    <div id="blog-section">
+        <h1 class="blog-head">Recent Blog</h1>
+
+        <!-- Populated dynamically via script.js -->
+        <div class="blogs-wrapper"></div>
+
+        <!-- Blog post card template — cloned per post in JS -->
+        <template class="blog-template">
+            <div class="blog-post">
+                <div class="blog-image"><img src="" alt="post-img" class="blog-pic"></div>
+                <h3 class="blog-info"></h3>
+                <p class="blog-by"><span>by <a href="#" class="blog-title"></a> on <a href="#">Dec
+                            19,2021</a></span></p>
+            </div>
+            <strong class="view-post"><a href="#">View All Posts</a></strong>
+        </template>
+    </div>
+
+    <!-- Injected via sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- sync.js loads shared header/footer; script.js handles all dynamic content rendering -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>

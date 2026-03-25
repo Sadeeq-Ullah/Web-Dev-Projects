@@ -1,0 +1,424 @@
+/* ============================================================
+   ROOT VARIABLES
+   ============================================================ */
+:root {
+    --min-gap: 1rem;
+    --mid-gap: 2rem;
+    --max-gap: 3rem;
+    --main-bg-color: #3b5d50;
+    --prim-color: white;
+    --text-color: #6a6a6a;
+    --border-maxrad: 30px;
+    --border-minrad: 20px;
+    --section-spacing: clamp(4rem, 8vw, 8rem);
+    --mid-fz: 1.6em;
+
+    /* Repeated font sizes across breakpoints extracted into variables */
+    --prod-name-fz: 2.3em;
+    --prod-rate-fz: 1.7em;
+}
+
+
+/* ============================================================
+   CART CONTAINER
+   ============================================================ */
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--section-spacing) 4rem;
+}
+
+
+/* ============================================================
+   PRODUCT CARD — image, info, quantity, buttons
+   ============================================================ */
+.cart-section {
+    display: flex;
+    margin-left: 6rem;
+    gap: 5rem;
+    background-color: var(--prim-color);
+    flex-wrap: wrap;
+    border: 2px solid var(--text-color);
+    border-radius: var(--border-minrad);
+    padding: 7rem;
+}
+
+.product-img {
+    width: 100%;
+    max-width: 340px;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.product-img #prod-pic {
+    width: 100%;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#prod-name {
+    font-size: var(--prod-name-fz);
+    font-weight: 600;
+}
+
+#prod-rate {
+    font-size: var(--mid-fz);
+    font-weight: 600;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: var(--min-gap);
+    flex-wrap: wrap;
+}
+
+.quantity .minus i,
+.quantity .plus i {
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 0.6rem 0.3rem;
+}
+
+.minus,
+.plus {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+
+/* Mobile tap feedback — keep :active separate from hover to avoid sticky states on touch */
+.minus:active,
+.plus:active {
+    background-color: rgb(78, 78, 78);
+    color: var(--prim-color);
+}
+
+.quantity-input {
+    width: 80px;
+    text-align: center;
+    font-size: 0.9em;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding: 0.7rem;
+}
+
+.added-amount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.added-amount .text-amount {
+    color: var(--main-bg-color);
+    font-size: 1.2em;
+}
+
+.shopping-btns {
+    display: flex;
+    gap: var(--min-gap);
+}
+
+.shopping-btns .buy-now,
+.shopping-btns .add-cart {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: var(--border-minrad);
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.shopping-btns .buy-now {
+    background-color: var(--main-bg-color);
+    color: var(--prim-color);
+}
+
+.shopping-btns .add-cart {
+    background-color: rgb(0, 0, 0);
+    color: var(--prim-color);
+}
+
+
+/* ============================================================
+   DETAILS SECTION — coupon code + order summary
+   ============================================================ */
+.details-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 1em 5em 1em;
+    gap: var(--mid-gap);
+}
+
+.coupon-code {
+    display: flex;
+    gap: var(--mid-gap);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.continue-shopping {
+    margin-bottom: 5em;
+}
+
+.continue-shopping a {
+    text-decoration: none;
+    color: var(--prim-color);
+    padding: 1.2rem;
+    border: none;
+    background-color: black;
+    border-radius: var(--border-maxrad);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.coupon-code .code-text {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.coupon-code .enter-code {
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.coupon-text {
+    display: flex;
+    gap: var(--min-gap);
+    width: 120%;
+    align-items: center;
+}
+
+.coupon-input {
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+.coupon-input:focus {
+    outline: 2px solid var(--main-bg-color);
+    border-color: var(--main-bg-color);
+}
+
+.apply-btn {
+    background-color: black;
+    color: var(--prim-color);
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--border-maxrad);
+    padding: 0.8rem 1.5rem;
+    transition: background-color 0.2s ease;
+}
+
+
+/* ============================================================
+   ORDER SUMMARY CARD
+   ============================================================ */
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--min-gap);
+    background-color: var(--prim-color);
+    width: 37%;
+    border: 1px solid var(--text-color);
+    border-radius: var(--border-minrad);
+    padding: 3rem;
+}
+
+.cart-total {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subtotal,
+.shiping,
+.discount,
+.tax,
+.shipping-time,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.checkout-btn {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 1rem 1.5rem;
+    margin: 1rem auto 0 auto;
+    display: block;
+    background-color: var(--main-bg-color);
+    color: var(--prim-color);
+    border: none;
+    width: 90%;
+    cursor: pointer;
+    border-radius: var(--border-maxrad);
+    transition: background-color 0.2s ease;
+}
+
+
+/* ============================================================
+   HOVER STATES
+   Scoped to pointer devices only — prevents sticky hover on touch
+   ============================================================ */
+@media (hover: hover) {
+    .shopping-btns .buy-now:hover {
+        background-color: rgb(17, 73, 70);
+    }
+
+    .shopping-btns .add-cart:hover {
+        background-color: rgb(78, 78, 78);
+    }
+
+    .apply-btn:hover {
+        background-color: rgb(78, 78, 78);
+    }
+
+    .checkout-btn:hover {
+        background-color: rgb(17, 73, 70);
+    }
+}
+
+
+/* ============================================================
+   MOBILE — max 550px
+   ============================================================ */
+@media (min-width: 200px) and (max-width: 550px) {
+    .cart-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 4rem 1.5rem;
+    }
+
+    #cart-container {
+        margin-bottom: 5em;
+        padding: var(--section-spacing) 1.9rem;
+    }
+
+    #prod-name {
+        font-size: var(--prod-name-fz);
+    }
+
+    #prod-rate {
+        font-size: var(--prod-rate-fz);
+    }
+
+    .quantity .minus i,
+    .quantity .plus i {
+        font-size: 1em;
+        padding: 0.4rem 0.1rem;
+    }
+
+    .quantity-input {
+        width: 65px;
+    }
+
+    .shopping-btns .buy-now,
+    .shopping-btns .add-cart {
+        padding: 0.6rem 1.3rem;
+        font-size: 0.9em;
+    }
+
+    .details-section {
+        padding: 3rem 1rem;
+        flex-direction: column;
+    }
+
+    .coupon-text {
+        width: 100%;
+    }
+
+    .details {
+        width: 110%;
+        padding: 3rem 2rem;
+    }
+
+    .checkout-btn {
+        font-size: 1em;
+        width: 90%;
+    }
+}
+
+
+/* ============================================================
+   TABLET — 550px to 1000px
+   ============================================================ */
+@media (min-width: 550px) and (max-width: 1000px) {
+    .cart-section {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    #cart-container {
+        margin-bottom: 5em;
+        align-items: center;
+        padding: var(--section-spacing) 2rem;
+    }
+
+    #prod-name {
+        font-size: var(--prod-name-fz);
+    }
+
+    #prod-rate {
+        font-size: var(--prod-rate-fz);
+    }
+
+    .quantity .minus i,
+    .quantity .plus i {
+        font-size: 1em;
+        padding: 0.4rem 0.1rem;
+    }
+
+    .quantity-input {
+        width: 65px;
+    }
+
+    .shopping-btns .buy-now,
+    .shopping-btns .add-cart {
+        padding: 0.6rem 1.3rem;
+        font-size: 0.9em;
+    }
+
+    .details-section {
+        padding: 3rem 1rem;
+        flex-direction: column;
+    }
+
+    .coupon-text {
+        width: 100%;
+    }
+
+    .details {
+        width: 130%;
+        padding: 3rem 2rem;
+    }
+
+    .checkout-btn {
+        font-size: 1em;
+        width: 101%;
+    }
+}

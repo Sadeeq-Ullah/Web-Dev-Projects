@@ -1,0 +1,423 @@
+/* === Global Design Tokens === */
+:root {
+    --min-gap: 1rem;
+    --mid-gap: 2rem;
+    --max-gap: 3rem;
+    --main-bg-color: #3b5d50;
+    --let-spac: 0.5px;
+    --prim-color: white;
+    --text-color: #6a6a6a;
+    --font-color: #333333;
+    --z-ind: 1;
+    --border-maxrad: 30px;
+    --border-minrad: 20px;
+    --min-fz: 1rem;
+    --section-spacing: clamp(4rem, 8vw, 8rem);
+    --micro-fz: 0.8rem;
+    --mid-fz: 1.6em;
+}
+
+/* === Breadcrumb Navigation === */
+.click-here {
+    font-size: 0.9em;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 2rem 1.5rem;
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    margin: 4rem;
+}
+
+.click-here .click-link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid var(--text-color);
+}
+
+/* === Main Checkout Layout === */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 6rem 16rem 6rem;
+    gap: var(--mid-gap);
+}
+
+/* === Billing Form === */
+.form-section .billing-form {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--text-color);
+    padding: 3rem;
+    width: 95%;
+    flex-direction: column;
+    gap: var(--min-gap);
+}
+
+.billing-form input,
+.billing-form select[class="country-select"],
+.billing-form textarea {
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    color: var(--font-color);
+}
+
+/* Removes native OS arrow from country dropdown */
+.billing-form select[class="country-select"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.billing-form {
+    background-color: var(--prim-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    color: var(--font-color);
+}
+
+.billing-form label {
+    font-size: calc(1em - 1px);
+    color: var(--font-color);
+}
+
+.billing-form input::placeholder,
+.billing-form select::placeholder,
+.billing-form textarea::placeholder {
+    font-size: 14px;
+}
+
+.billing-form label .star {
+    color: rgb(211, 16, 16);
+}
+
+/* === Side-by-side Field Rows === */
+.name-fields,
+.statzip-fields,
+.phone-email-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: var(--min-gap);
+}
+
+.name-fields .form-field,
+.statzip-fields .form-field,
+.phone-email-fields .form-field {
+    flex: 1;
+}
+
+.name-fields .form-field input,
+.statzip-fields .form-field input,
+.phone-email-fields .form-field input {
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.checkbox-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* === Textarea === */
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    resize: vertical;
+    min-height: 120px;
+}
+
+textarea::placeholder {
+    font-family: inherit;
+    font-size: inherit;
+    opacity: 1;
+}
+
+/* Shared focus ring for all interactive fields */
+textarea:focus,
+select:focus,
+input:focus {
+    outline: none;
+    border-color: var(--main-bg-color);
+    box-shadow: 0 0 0 3px rgba(51, 194, 139, 0.384) inset;
+}
+
+/* === Section Headings === */
+.form-heading,
+.text-coupon,
+.text-order {
+    font-size: 1.8rem;
+    margin-bottom: 0.6em;
+}
+
+/* === Order Process — Right Column === */
+.process-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--max-gap);
+}
+
+.coupon-code {
+    display: flex;
+    gap: var(--min-gap);
+    border: 1px solid var(--text-color);
+    padding: 2.5rem 10rem 2.5rem 2.5rem;
+    border-radius: 10px;
+    background-color: var(--prim-color);
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.coupon-code .code-enter {
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.coupon-parts {
+    display: flex;
+    gap: var(--min-gap);
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coupon-parts input {
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+.coupon-parts .apply-btn {
+    background-color: black;
+    color: var(--prim-color);
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--border-maxrad);
+    padding: 0.8rem 1.5rem;
+}
+
+/* === Order Summary Card === */
+.your-order {
+    display: flex;
+    flex-direction: column;
+    gap: var(--min-gap);
+    border: 1px solid var(--text-color);
+    padding: 3rem 4em;
+    background-color: var(--prim-color);
+    border-radius: 10px;
+}
+
+.normal-texts {
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+}
+
+.full-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--min-gap);
+}
+
+.detail-field {
+    display: flex;
+    gap: var(--min-gap);
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+/* === Payment Methods === */
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: var(--min-gap);
+}
+
+.payment-methods .pay-meth {
+    border: 1px solid var(--text-color);
+    padding: 0.9rem;
+    font-size: 1.3rem;
+}
+
+.pay-meth a {
+    color: rgb(82, 82, 82);
+}
+
+.placeorder-btn a {
+    padding: 1rem 1.8rem;
+    border: none;
+    width: 43%;
+    background-color: black;
+    border-radius: var(--border-maxrad);
+    color: var(--prim-color);
+    margin: 1.5rem auto;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* === Order Confirmation / Thank You Page === */
+.content-section {
+    display: flex;
+    justify-content: center;
+    margin: 6em 0;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--min-gap);
+}
+
+.imgs-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.content-section .imgs-section .cartcheck-img {
+    width: 6%;
+    filter: invert(31%) sepia(21%) saturate(573%) hue-rotate(105deg) brightness(97%) contrast(92%);
+}
+
+/* Decorative shadow beneath checkmark icon */
+.imgs-section::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 4%;
+    height: 66%;
+    border-radius: 50%;
+    background-color: rgb(1 6 4 / 20%);
+}
+
+.bold-heading {
+    font-size: 4.5em;
+    margin: 3rem 0 0 0;
+    font-weight: 500;
+}
+
+.order-para {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.back-btn a {
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1.1em 1.4em;
+    background-color: black;
+    color: var(--prim-color);
+    border: none;
+    border-radius: var(--border-maxrad);
+    cursor: pointer;
+}
+
+/* === Mobile — max 550px === */
+@media (min-width: 200px) and (max-width: 550px) {
+    .main-content {
+        padding: 0 1rem 16rem 1rem;
+    }
+
+    .form-section .billing-form {
+        width: 88%;
+    }
+
+    .coupon-code {
+        padding: 2.5rem 1.5rem;
+        width: 105%;
+    }
+
+    .name-fields,
+    .statzip-fields,
+    .phone-email-fields {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+
+    .your-order {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .order-section {
+        width: 105%;
+    }
+
+    .payment-methods .pay-meth {
+        font-size: 1.1rem;
+    }
+
+    .placeorder-btn a {
+        padding: 1rem 1.8rem;
+        width: 65%;
+        font-size: 1em;
+    }
+
+    .content-section .imgs-section .cartcheck-img {
+        width: 25%;
+    }
+
+    .imgs-section::before {
+        top: 11px;
+        width: 21%;
+    }
+
+    .bold-heading {
+        font-size: 3.5em;
+    }
+
+    .order-para {
+        font-size: 1.1rem;
+    }
+
+    .content-section {
+        margin: 6em 0 13em 0;
+    }
+}
+
+/* === Hover States (pointer devices only) === */
+@media (hover: hover) {
+    .click-here .click-link:hover {
+        border-bottom: none;
+    }
+
+    .payment-methods .pay-meth a:hover {
+        text-decoration: none;
+    }
+
+    .placeorder-btn a:hover {
+        background-color: rgb(78, 78, 78);
+        color: var(--prim-color);
+    }
+
+    .back-btn a:hover {
+        background-color: rgb(78, 78, 78);
+        color: var(--prim-color);
+    }
+}

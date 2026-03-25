@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ecommerce web/img/favicon.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <link rel="stylesheet" href="/Ecommerce web/css/cart.css">
+    <title>Cart - Furni.</title>
+</head>
+
+<body>
+    <!-- Injected via loadComponent() in sync.js -->
+    <header></header>
+
+    <div class="cart-content">
+
+        <!-- ================================================
+             HERO SECTION
+             ================================================ -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1 id="hero-heading" style="font-size: 2.8rem;">Cart</h1>
+                <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate velit imperdiet dolor tempor tristique.
+                </div>
+                <div class="buttons">
+                    <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                    <button id="explore">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Ecommerce web/img/couch.png" alt="">
+            </div>
+        </div>
+
+        <!-- ================================================
+             CART CONTAINER
+             ================================================ -->
+        <div id="cart-container">
+
+            <!-- Product card — values overwritten by cartPageValues() in script.js -->
+            <div class="cart-section">
+                <div class="product-img">
+                    <img src="/Ecommerce web/img/product-1.png" alt="product-img" id="prod-pic">
+                </div>
+                <div class="product-info">
+                    <div id="prod-name">Nordic Chair</div>
+                    <div id="prod-rate">$50.00 </div>
+
+                    <!-- Quantity controls — plus/minus handled via delegated listener in script.js -->
+                    <div class="quantity">
+                        <button class="minus"><i class="ri-subtract-line"></i></button>
+                        <input type="text" value="1" class="quantity-input">
+                        <button class="plus"><i class="ri-add-line"></i></button>
+                        <div class="added-amount"><img src="/Ecommerce web/img/equal.svg" alt="" width="20px"> <span
+                                class="text-amount">$50.00</span></div>
+                    </div>
+                    <div class="shopping-btns">
+                        <button class="buy-now">Buy Now</button>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================================================
+                 DETAILS SECTION — coupon + order summary
+                 ================================================ -->
+            <div class="details-section">
+
+                <!-- Coupon code input -->
+                <div class="coupon-code">
+                    <div class="continue-shopping"><a href="/Ecommerce web/shop.html">Continue Shopping</a></div>
+                    <div class="code-text">Coupon</div>
+                    <div class="enter-code">Enter your coupon code, if you have one.</div>
+                    <div class="coupon-text">
+                        <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+
+                <!-- Order summary — amounts updated by cartPageValues() in script.js -->
+                <div class="details">
+                    <div class="cart-total">Cart Totals</div>
+                    <div class="subtotal">Subtotal <span class="subtotal-amount">$50.00</span></div>
+                    <div class="shiping">Shipping <span class="shipping-amount">$10.00</span></div>
+                    <div class="discount">Discount <span class="discount-amount">$0.00</span></div>
+                    <div class="tax">Tax <span class="tax-amount">$0.00</span></div>
+                    <div class="shipping-time">Shipping Time <span class="shipping-time-amount">3-5 business
+                            days</span>
+                    </div>
+                    <div class="total">Total <span class="total-amount">$60.00</span></div>
+                    <!-- Saves cart to localStorage and redirects to cart_proceed.html -->
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Injected via loadComponent() in sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- script.js handles cart logic; sync.js loads shared components -->
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+
+</body>
+
+</html>

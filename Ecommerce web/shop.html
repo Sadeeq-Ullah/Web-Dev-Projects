@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ecommerce web/img/favicon.png" type="image">
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <title>Shop - Furni.</title>
+</head>
+
+<body>
+    <!-- Injected via sync.js -->
+    <header></header>
+
+    <div class="shop-content">
+
+        <!-- === Shop Hero === -->
+        <div class="shop-hero">
+            <h1 class="hero-text">Shop</h1>
+            <div class="shop-image">
+                <img src="/Ecommerce web/img/couch.png" alt="" class="shop-img">
+            </div>
+        </div>
+
+        <!-- Populated dynamically via script.js -->
+        <div class="shope-list" id="prod-list"></div>
+
+        <!-- Product card template — cloned per product in JS -->
+        <template id="prod-template">
+            <div class="prod-card">
+                <img src="" alt="" class="product-img">
+                <h3 class="product-title"></h3>
+                <strong class="product-price"></strong>
+                <button class="cart-btn">Add to cart</button>
+            </div>
+        </template>
+
+    </div>
+
+    <!-- Injected via sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- sync.js loads shared header/footer; script.js handles product rendering -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <link rel="stylesheet" href="/Ecommerce web/css/cart_proceed.css">
+    <title>Thank You- Furni.</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <!-- Injected via sync.js -->
+    <header></header>
+
+    <div class="thank-you-content">
+
+        <!-- === Hero Section === -->
+        <div class="hero">
+            <div class="hero-text">
+                <!-- Note: heading reads "Cart" — consider updating to match this page -->
+                <h1 id="hero-heading" style="font-size: 2.8rem;">Cart</h1>
+                <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate velit imperdiet dolor tempor tristique.
+                </div>
+                <div class="buttons">
+                    <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                    <button id="explore">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Ecommerce web/img/couch.png" alt="">
+            </div>
+        </div>
+
+        <!-- === Order Confirmation === -->
+        <div class="content-section">
+            <!-- Checkmark icon with decorative shadow via ::before in CSS -->
+            <div class="imgs-section"><img src="/Ecommerce web/img/check.svg" alt="" class="cartcheck-img"></div>
+            <h1 class="bold-heading">Thank You!</h1>
+            <p class="order-para">Your order has been placed successfully.</p>
+            <div class="back-btn"><a href="/Ecommerce web/shop.html">Back to Shop</a></div>
+        </div>
+
+    </div>
+
+    <!-- Injected via sync.js -->
+    <footer id="footer-section"></footer>
+
+    <!-- sync.js loads shared header/footer; script.js handles post-order logic -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>

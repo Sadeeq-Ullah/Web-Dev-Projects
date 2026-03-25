@@ -1,0 +1,150 @@
+/* === Global Design Tokens === */
+:root {
+    --min-gap: 1rem;
+    --mid-gap: 2rem;
+    --max-gap: 3rem;
+    --font-color: #2f2f2f;
+    --main-bg-color: #3b5d50;
+    --prim-color: white;
+    --text-color: #6a6a6a;
+    --border-maxrad: 30px;
+    --min-fz: 1rem;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* === Page Layout === */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--max-gap);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+/* === Contact Info Row === */
+.contact-details {
+    display: flex;
+    gap: var(--mid-gap);
+    flex-wrap: wrap;
+}
+
+.contact-src {
+    display: flex;
+    gap: var(--min-gap);
+    align-items: center;
+}
+
+/* Icon badge with brand background */
+.icon img {
+    background-color: var(--main-bg-color);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+/* === Contact Form === */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 720px;
+    gap: var(--mid-gap);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-field label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--font-color);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--font-color);
+    transition: all 0.3s ease;
+}
+
+/* Focus ring using brand color */
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--main-bg-color);
+    box-shadow: 0 0 0 3px rgba(59, 93, 80, 0.1);
+}
+
+/* Side-by-side name fields */
+.name-field {
+    display: flex;
+    gap: var(--mid-gap);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.name-field .form-field {
+    flex: 1;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: var(--prim-color);
+    border: none;
+    border-radius: var(--border-maxrad);
+    font-size: var(--min-fz);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* === Mobile — max 768px === */
+@media (max-width: 768px) {
+    .name-field {
+        flex-direction: column;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .main-container {
+        padding-bottom: 12em;
+    }
+}
+
+/* === Hover States (pointer devices only) === */
+@media (hover: hover) {
+    .submit-btn:hover {
+        background-color: #4b4b4b;
+    }
+}

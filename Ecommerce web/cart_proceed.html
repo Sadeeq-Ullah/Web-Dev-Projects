@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <link rel="stylesheet" href="/Ecommerce web/css/cart_proceed.css">
+    <title>Proceed to Checkout- Furni.</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <!-- Injected via sync.js -->
+    <header></header>
+
+    <div class="proceed-content">
+
+        <!-- === Hero Section === -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1 id="hero-heading" style="font-size: 2.8rem;">Checkout</h1>
+                <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate velit imperdiet dolor tempor tristique.
+                </div>
+                <div class="buttons">
+                    <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                    <button id="explore">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Ecommerce web/img/couch.png" alt="">
+            </div>
+        </div>
+
+        <!-- Returning customer login prompt -->
+        <div class="click-here">Returning customer ? <a class="click-link" href="/Ecommerce web/sign_in.html">Click
+                here</a> to login
+        </div>
+
+        <div class="main-content">
+
+            <!-- === Billing Form === -->
+            <div class="form-section">
+                <div class="form-heading">Billing Details</div>
+                <form action="/submit" method="post" class="billing-form" autocomplete="on">
+
+                    <!-- Country -->
+                    <div class="form-field">
+                        <label for="country" class="filling-field">Country <span class="star">*</span></label>
+                        <select class="country-select" name="country" id="country" autocomplete="country">
+                            <!-- Options populated dynamically via script.js -->
+                            <option value="" selected hidden>Select Country</option>
+                        </select>
+                    </div>
+
+                    <!-- First & Last Name -->
+                    <div class="name-fields">
+                        <div class="form-field">
+                            <label for="first-name" class="filling-field">First Name <span class="star">*</span></label>
+                            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name" class="filling-field">Last Name <span class="star">*</span></label>
+                            <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+                        </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="form-field">
+                        <label for="company-name" class="filling-field">Company Name <span class="star">*</span></label>
+                        <input type="text" id="company-name" name="company-name" autocomplete="organization">
+                    </div>
+
+                    <!-- Address (two lines) -->
+                    <div class="form-field">
+                        <label for="street-address" class="filling-field">Address <span class="star">*</span></label>
+                        <input type="text" id="street-address" name="street-address"
+                            placeholder="House number and street name" autocomplete="address-line1" required>
+                        <input type="text" id="apartment" name="apartment"
+                            placeholder="Apartment, suite, unit etc. (optional)" autocomplete="address-line2">
+                    </div>
+
+                    <!-- State & ZIP -->
+                    <div class="statzip-fields">
+                        <div class="form-field">
+                            <label for="state" class="filling-field">State / County <span class="star">*</span></label>
+                            <input type="text" id="state" name="state" placeholder="State / County"
+                                autocomplete="address-level1" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="postcode" class="filling-field">Postcode / ZIP <span
+                                    class="star">*</span></label>
+                            <input type="text" id="postcode" name="postcode" placeholder="Postcode / ZIP"
+                                autocomplete="postal-code" required>
+                        </div>
+                    </div>
+
+                    <!-- Phone & Email -->
+                    <div class="phone-email-fields">
+                        <div class="form-field">
+                            <label for="phone" class="filling-field">Phone <span class="star">*</span></label>
+                            <input type="text" id="phone" name="phone" placeholder="Phone" autocomplete="tel" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="filling-field">Email Address <span class="star">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="email"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- Optional account creation -->
+                    <div class="form-field checkbox-field">
+                        <input type="checkbox" id="account-create" name="create-account">
+                        <label for="account-create" class="checkbox-label">Create an account?</label>
+                    </div>
+
+                    <!-- Optional alternate shipping address -->
+                    <div class="form-field checkbox-field">
+                        <input type="checkbox" id="shift-address" name="shift-address">
+                        <label for="shift-address">Shift to a different address?</label>
+                    </div>
+
+                    <!-- Order notes -->
+                    <div class="form-field">
+                        <label for="text">Order Notes</label>
+                        <textarea id="text" name="order-notes" placeholder="Write your order notes here..."
+                            rows="4"></textarea>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- === Order Summary & Payment === -->
+            <div class="process-details">
+
+                <!-- Coupon Code -->
+                <div class="coupon-section">
+                    <div class="text-coupon">Coupon Code</div>
+                    <div class="coupon-code">
+                        <p class="code-enter">Enter your coupon code, if you have one.</p>
+                        <div class="coupon-parts">
+                            <input type="text" placeholder="Enter coupon code" class="coupon-input">
+                            <button class="apply-btn">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Breakdown -->
+                <div class="order-section">
+                    <div class="text-order">Your Order</div>
+                    <div class="your-order">
+
+                        <!-- Column headers -->
+                        <div class="normal-texts">
+                            <div class="product">Product</div>
+                            <div class="total">Total</div>
+                        </div>
+
+                        <!-- Line items — amounts updated via script.js -->
+                        <div class="full-details">
+                            <div class="chair detail-field">Modern Chair <strong><span
+                                        class="chair-price">$50.00</span></strong></div>
+                            <div class="cart_proc_subtotal detail-field">Subtotal <strong><span
+                                        class="subtotal-amount">$120.00</span></strong></div>
+                            <div class="cart_proc_shiping detail-field">Shipping <strong><span
+                                        class="shipping-amount">$10.00</span></strong></div>
+                            <div class="discount detail-field">Discount <strong><span
+                                        class="discount-amount">$0.00</span></strong></div>
+                            <div class="tax detail-field">Tax <strong><span class="tax-amount">$0.00</span></strong>
+                            </div>
+                            <div class="shipping-time detail-field">Shipping Time <strong><span
+                                        class="shipping-time-amount">3-5 business days</span></strong>
+                            </div>
+                            <div class="cart_proc_total detail-field">Total <strong><span
+                                        class="total-amount">$130.00</span></strong></div>
+                        </div>
+
+                        <!-- Payment method selection -->
+                        <div class="payment-methods">
+                            <div class="bank-transfer pay-meth"><a href="">Direct Bank Transfer</a></div>
+                            <div class="cheque-pay pay-meth"><a href="">Cheque Payment</a></div>
+                            <div class="paypal pay-meth"><a href="">PayPal</a></div>
+                            <div class="credit-card pay-meth"><a href="">Credit Card</a></div>
+                        </div>
+
+                        <div class="placeorder-btn"><a href="/Ecommerce web/thank_you.html">Place Order</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Injected via sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- sync.js loads shared header/footer; script.js handles cart totals and country population -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>

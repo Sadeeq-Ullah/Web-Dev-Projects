@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ecommerce web/img/favicon.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <title>About Us - Furni.</title>
+</head>
+
+<body>
+    <div id="about-us">
+
+        <!-- Injected via loadComponent() in sync.js -->
+        <header></header>
+
+        <!-- ================================================
+             HERO SECTION
+             ================================================ -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1 id="hero-heading" style="font-size: 2.8rem;">About us</h1>
+                <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate velit imperdiet dolor tempor tristique.
+                </div>
+
+                <div class="buttons">
+                    <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                    <button id="explore">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Ecommerce web/img/couch.png" alt="">
+            </div>
+        </div>
+
+        <!-- ================================================
+             SERVICES / WHY CHOOSE US SECTION
+             Cards are cloned from #services-template and injected by sync.js
+             ================================================ -->
+        <div class="services-showcase">
+            <div class="services-cont">
+                <h1 class="serv-head">Why Choose Us</h1>
+                <p class="serv-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate.</p>
+                <div id="services-icons">
+                    <template id="services-template">
+                        <div class="wrapper-class">
+                            <div class="image-wrap"><img class="service-img" src="" alt="icon svg"></div>
+                            <h2 class="service-text">Fast and Free Shipping</h2>
+                            <p class="main-text">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                                Aliquam
+                                vulputate.</p>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <div class="services-pics">
+                <img class="dots-pic" src="/Ecommerce web/img/dots-yellow.svg" alt="dots pic">
+                <img class="major-pic" src="/Ecommerce web/img/why-choose-us-img.jpg" alt="main pic">
+            </div>
+        </div>
+
+        <!-- ================================================
+             TEAM SECTION
+             Cards are cloned from .team-template and injected into #team-section by sync.js
+             ================================================ -->
+        <div id="team-section"></div>
+        <template class="team-template">
+            <div class="team-card">
+                <img src="" alt="" class="team-img">
+                <h1 class="member-title"></h1>
+                <p class="member-role">CEO, Founder, Atty.</p>
+                <p class="member-para">Separated they live in. Separated they live in Bookmarksgrove right at the coast
+                    of
+                    the Semantics, a large language ocean.</p>
+                <div class="read-more"><a href="">Learn More</a></div>
+            </div>
+        </template>
+
+        <!-- ================================================
+             TESTIMONIALS SECTION
+             Cards are cloned from .testimonial-temp and injected by sync.js
+             Slider controlled by sliderHandle() in script.js
+             ================================================ -->
+        <div class="testimonials-section">
+            <h1 class="test-head">Testimonials</h1>
+            <div class="testimonial-frame">
+                <div class="left" id="left-arrow"><img src="/Ecommerce web/img/right-arrow.png" alt=""></div>
+                <div class="testimonials-wrapper"></div>
+                <template class="testimonial-temp">
+                    <div class="testimonial-card">
+                        <blockquote>
+                            <p class="test-info">
+                                Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                                odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                                habitant morbi tristique senectus et netus et malesuada fames ac
+                                turpis egestas. Integer convallis volutpat dui quis
+                                scelerisque.
+                            </p>
+                        </blockquote>
+
+                        <div class="person-pic">
+                            <img src="" alt="person-pic" class="person-1-img">
+                        </div>
+                        <h3 class="person-title"></h3>
+                        <p class="role">CEO, Co-Founder, XYZ Inc.</p>
+                    </div>
+                </template>
+                <div class="right" id="right-arrow"><img src="/Ecommerce web/img/right-arrow.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Injected via loadComponent() in sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- sync.js loads shared components; script.js handles interactions -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>

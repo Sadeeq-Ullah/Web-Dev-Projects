@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Ecommerce web/img/favicon.png" type="image">
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Ecommerce web/css/home.css">
+    <link rel="stylesheet" href="/Ecommerce web/css/profile.css">
+    <title>Sign In - Furni.</title>
+</head>
+
+<body>
+    <!-- Injected via sync.js -->
+    <header></header>
+
+    <div class="signin-content">
+
+        <!-- === Hero Section === -->
+        <div class="hero">
+            <div class="hero-text">
+                <h1 id="hero-heading" style="font-size: 2.8rem;">Profile</h1>
+                <div class="hero-para">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                    vulputate velit imperdiet dolor tempor tristique.
+                </div>
+                <div class="buttons">
+                    <div id="shope-now"><a href="/Ecommerce web/shop.html">Shop Now</a></div>
+                    <button id="explore">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/Ecommerce web/img/couch.png" alt="">
+            </div>
+        </div>
+
+        <div class="cards-section">
+
+            <!-- Promotional card linking to registration -->
+            <div class="normal-card">
+                <!-- BUG FIX: was "Already have no account?" — nonsensical and logically wrong -->
+                <p class="account-para">Don't have an account?</p>
+                <h1 class="account-heading"><a href="/Ecommerce web/sign_up.html">Register Now!</a></h1>
+                <img src="/Ecommerce web/img/couch.png" alt="" class="main-image">
+            </div>
+
+            <!-- === Sign In Form === -->
+            <form action="/submit" method="post" class="sign-in" autocomplete="on">
+                <div class="form-title">Sign in</div>
+
+                <!-- Email -->
+                <div class="form-field">
+                    <label for="email" class="filling-field">Email Address <span class="star">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Email Address"
+                        autocomplete="email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-field">
+                    <label for="password" class="filling-field">Password <span class="star">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Password"
+                        autocomplete="current-password" required>
+                </div>
+
+                <!-- Disabled until JS validates inputs -->
+                <button class="submit-button" disabled>Login</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Injected via sync.js -->
+    <div id="footer-section"></div>
+
+    <!-- sync.js loads shared header/footer; script.js handles form validation and login logic -->
+    <script src="/Ecommerce web/js/sync.js" type="module" defer></script>
+    <script src="/Ecommerce web/js/script.js" type="module" defer></script>
+
+</body>
+
+</html>
