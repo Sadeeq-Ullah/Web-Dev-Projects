@@ -1,0 +1,525 @@
+/* CSS Reset - Essential for consistent cross-browser rendering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Includes padding and border in element's total width/height */
+}
+
+/* HTML root element - Sets foundation for responsive design */
+html {
+    height: 100%;
+    /* Ensures full viewport height */
+    width: 100%;
+    /* Ensures full viewport width */
+    /* Removed margin/padding as they're already in reset */
+}
+
+/* Body element - Main container for all content */
+body {
+    min-height: 100vh;
+    /* Minimum height of full viewport */
+    width: 100%;
+    /* Removed margin/padding as they're in reset */
+
+    /* Background setup - Fixed the cutting issue */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("coding pic.jpg");
+    background-size: cover;
+    /* Scales image to cover entire element */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-attachment: fixed;
+    /* Changed from scroll - keeps background fixed during scroll */
+
+    font-family: sans-serif;
+    position: relative;
+    /* Establishes positioning context for children */
+}
+
+/* Logo styling */
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+    text-shadow:
+        0 0 4px #fffafa,
+        0 0 10px #ffffff,
+        0 0 20px #fffafa;
+    font-weight: 900;
+    cursor: pointer;
+    font-family: cursive;
+    display: inline-block;
+    /* Ensures proper box model behavior */
+}
+
+/* Header - Fixed positioning and gradient issues */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensures header stays above other content */
+
+    /* Fixed gradient syntax - removed spaces between color stops */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-color: transparent;
+    width: 100%;
+    /* Ensures full width coverage */
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20vh;
+    /* Consider using responsive units here */
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+}
+
+/* Navigation links */
+nav ul li a {
+    border-radius: 10px;
+    padding: 0.7em 0.6em;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    /* Correct usage - allows padding but flows inline */
+    vertical-align: middle;
+    /* CRITICAL FIX: Aligns inline-block elements properly */
+    text-align: center;
+    /* Ensures text centers properly */
+    min-width: max-content;
+    /* Prevents text wrapping in buttons */
+}
+
+/* Primary call-to-action button */
+.cta-button-1 {
+    background-color: rgb(5, 107, 240);
+    color: black;
+    padding: 0.7em 0.6em;
+    /* Removed duplicate display: inline-block as it's in parent */
+}
+
+/* Hero section - Fixed layout issues */
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 70vh;
+    /* Ensures hero section has substantial height */
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    /* Ensures content stays above background */
+}
+
+/* Hero heading - Improved responsive typography */
+#hero h1 {
+    width: 50vw;
+    padding: 0rem 2rem;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.8vw, 4rem);
+    /* Responsive font sizing with limits */
+    line-height: 1.2;
+    /* Improves readability */
+    margin-bottom: 1rem;
+    /* Adds spacing between elements */
+}
+
+/* Hero call-to-action button */
+#hero a {
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 3rem;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    /* Ensures proper button behavior */
+    vertical-align: middle;
+    /* Aligns properly with surrounding content */
+}
+
+/* Hero button hover effects */
+#hero a:hover {
+    transform: translateY(-15%);
+    box-shadow:
+        0 0 4px #00FFFF,
+        0 0 40px #00FFFF,
+        0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Trust/Stats section - Fixed height and layout issues */
+.trust-bar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    margin-top: -3rem;
+    min-height: 10vh;
+    /* Changed from fixed height to minimum height */
+    flex-wrap: wrap;
+    /* Allows stats to wrap on smaller screens */
+    width: 100%;
+    /* Ensures full width */
+}
+
+/* Individual stat blocks */
+.stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    /* Ensures consistent sizing */
+}
+
+/* Stat labels - Improved responsive typography */
+.stat-block .stat-label {
+    color: rgb(0, 0, 0);
+    font-size: clamp(0.875rem, 1.9vw, 1.5rem);
+    /* Responsive font sizing */
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow:
+        0 0 4px #00FFFF,
+        0 0 10px #00FFFF,
+        0 0 20px rgba(0, 255, 255, 0.6);
+    text-align: center;
+    /* Ensures text centers properly */
+    margin-bottom: 0.5rem;
+    /* Adds spacing between label and number */
+}
+
+/* Stat numbers */
+.stat-number {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-size: clamp(1.25rem, 1.5rem, 2rem);
+    /* Responsive sizing */
+    text-shadow:
+        0 0 4px #00FFFF,
+        0 0 10px #00FFFF,
+        0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Mobile Responsive Design - CRITICAL FIXES */
+@media screen and (max-width: 600px) {
+
+    /* Header and navigation adjustments */
+    header {
+        padding: 1rem;
+        /* Use fixed units for mobile consistency */
+        flex-wrap: wrap;
+        /* Allows header content to wrap */
+    }
+
+    nav ul {
+        margin-right: 0;
+        /* Remove large right margin on mobile */
+        gap: 1rem;
+        /* Reduce gap for smaller screens */
+        justify-content: flex-end;
+        /* Align items to the right */
+        width: 100%;
+        /* Take full width */
+        margin-top: 1rem;
+        /* Add spacing when wrapped */
+    }
+
+    /* Navigation links - Fixed inline-block issues */
+    nav ul li a {
+        padding: 0.5em 0.7em;
+        font-size: clamp(0.75rem, 3vw, 0.9rem);
+        /* Better responsive font sizing */
+        width: auto;
+        /* Changed from 9vw - let content determine width */
+        min-width: 80px;
+        /* Minimum touch target size */
+        display: inline-block;
+        vertical-align: middle;
+        /* CRITICAL: Prevents baseline alignment issues */
+    }
+
+    /* Primary CTA button mobile fixes */
+    .cta-button-1 {
+        background-color: rgb(165, 5, 240);
+        color: black;
+        padding: 0.6em 0.7em;
+        display: inline-block;
+        width: auto;
+        /* Changed from 17vw - content-based width */
+        min-width: 120px;
+        /* Appropriate minimum size */
+        vertical-align: middle;
+        /* Consistent alignment */
+    }
+
+    /* Hero section mobile adjustments */
+    #hero {
+        min-height: 50vh;
+        /* Adjusted for mobile */
+        padding: 1rem;
+        /* Reduced padding */
+        align-items: center;
+        /* Center content on mobile */
+        text-align: center;
+        /* Center text alignment */
+    }
+
+    /* Hero heading mobile fixes */
+    #hero h1 {
+        width: 90vw;
+        /* More appropriate width for mobile */
+        height: auto;
+        /* Remove fixed height */
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+        /* Better mobile typography */
+        padding: 0 1rem;
+        /* Reduced padding */
+        margin-bottom: 2rem;
+        /* Consistent spacing */
+    }
+
+    /* Hero CTA button mobile */
+    #hero a {
+        padding: 0.8rem 1.5rem;
+        margin: 1rem 0;
+        /* Adjusted margins */
+        font-size: 0.9rem;
+    }
+
+    /* Trust bar mobile layout */
+    .trust-bar {
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+        min-height: auto;
+        /* Let content determine height */
+    }
+
+    /* Stat blocks mobile */
+    .stat-block {
+        min-width: 100px;
+        /* Adjusted for mobile */
+    }
+
+    /* Stat labels mobile typography */
+    .stat-block .stat-label {
+        font-size: clamp(0.75rem, 3.5vw, 1rem);
+        /* Better mobile sizing */
+    }
+}
+
+/* Additional fix for very small screens */
+@media screen and (max-width: 400px) {
+    nav ul {
+        justify-content: center;
+        /* Center navigation on very small screens */
+    }
+
+    .trust-bar {
+        gap: 1rem;
+        /* Further reduce gap */
+    }
+
+    .stat-block {
+        min-width: 80px;
+        /* Smaller minimum width */
+    }
+}
+
+
+
+
+/* 
+
+html {  
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("coding pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+    text-shadow:
+        0 0 4px #fffafa,
+        0 0 10px #ffffff,
+        0 0 20px #fffafa;
+    font-weight: 900;
+    font-family: cursive;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 2vw;
+    position: sticky;
+    background-image: linear-gradient(rgb(0 0 0 / 50%),
+            rgba(0 0 0 /50%));
+    background-color: transparent;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20vh;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    border-radius: 10px;
+    padding: 0.7em 0.6em;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.cta-button-1 {
+    background-color: rgb(165, 5, 240);
+    color: black;
+    padding: 0.7em 0.6em;
+}
+
+#hero h1 {
+    width: 50vw;
+    padding: 0rem 2rem;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 5.8vw;
+}
+
+#hero a {
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    margin: 3rem;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#hero a:hover {
+    transform: translateY(-15%);
+    box-shadow:
+        0 0 4px #00FFFF,
+        0 0 40px #00FFFF,
+        0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.trust-bar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    margin-top: 3rem;
+    height: 3vh;
+}
+
+.stat-block .stat-label {
+    color: rgb(0, 0, 0);
+    font-size: 1.9vw;
+    font-family: "PT Serif", serif;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 
+        0 0 4px #00FFFF, 
+        0 0 10px #00FFFF, 
+        0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+.stat-number {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    text-shadow:
+        0 0 4px #00FFFF,
+        0 0 10px #00FFFF,
+        0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+
+@media screen and (max-width: 600px) {
+    nav ul li a {
+        padding: 0.5em 0.7em;
+        font-size: 2.5vw;
+        width: 9vw;
+        display: inline-block;
+    }
+
+    .cta-button-1 {
+        background-color: rgb(165, 5, 240);
+        color: black;
+        padding: 0.6em 0.7em;
+        display: inline-block;
+        width: 17vw;
+    }
+
+    #hero {
+        min-height: 17vh;
+    }
+
+    #hero a {
+        padding: 0.8rem 1rem;
+        margin: 2rem;
+        font-size: 0.7rem;
+    }
+
+    #hero h1 {
+        height: 20vh;
+    }
+
+    .trust-bar {
+        gap: 2rem;
+        padding: 2rem 0rem;
+        margin-top: 3rem;
+    }
+} */
