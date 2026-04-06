@@ -1,15 +1,20 @@
 # 🛒 Ecommerce Web (Furni)
 
-A modern, dynamic e-commerce website template built with vanilla JavaScript. This project demonstrates how to build a scalable multi-page website using a component-based architecture and data-driven content rendering, without relying on heavy frontend frameworks.
+A responsive multi-page e-commerce website built with **vanilla JavaScript**, HTML5, and CSS3. This project is a strong example of a framework-free shopping experience with reusable components and data-driven content rendering.
 
-## 🌐 Live Demo
+## 🚀 Live Demo
+[View the Furni E-Commerce Demo](https://sofastorewebsite321.netlify.app/)
 
-🚀 **Check out the live version here:** [https://sofastorewebsite321.netlify.app/](https://sofastorewebsite321.netlify.app/)
+## 📌 Project Overview
+This e-commerce template is ideal for front-end developers, UI/UX designers, and startups that need a fast, lightweight online store.
+
+## 🔍 SEO Keywords
+e-commerce website, shopping template, product catalog, responsive storefront, JavaScript e-commerce, vanilla JS web app.
 
 ## ✨ Features
 
 - **Dynamic Content Rendering**: Products, services, blogs, and testimonials are injected dynamically via JavaScript, keeping the HTML clean.
-- **Component Architecture**: Reusable `navbar` and `footer` components are loaded asynchronously, ensuring consistency across all pages.`
+- **Component Architecture**: Reusable `navbar` and `footer` components are loaded asynchronously, ensuring consistency across all pages.
 - **Smart Routing Logic**: The application detects the current page (e.g., Home vs. Shop) and adapts content display accordingly—showing featured items on the homepage and full catalogs on dedicated pages.
 - **Data-Driven UI**: All content is managed through a central `json.js` file, making updates and maintenance effortless.
 - **Responsive Design**: Optimized for a seamless shopping experience on desktop and mobile devices.

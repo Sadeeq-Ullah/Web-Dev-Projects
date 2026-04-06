@@ -1,11 +1,19 @@
-# 🚀 Web Development Portfolio
+# 🚀 Web Development Portfolio | Responsive HTML CSS JS Projects
 
-### *Building Production-Ready Web Applications with Modern Architecture*
+### Modern front-end web applications built with HTML5, CSS3, JavaScript, and Netlify deployment.
 
 [![Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/Sadeeq-Ullah)
 [![Live Demos](https://img.shields.io/badge/Live%20Demos-View%20All-00C7B7?style=for-the-badge&logo=netlify)](https://github.com/Sadeeq-Ullah?tab=repositories)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sadeeq-khilji/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-Expert-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
+
+---
+
+## 📌 Summary
+
+A polished GitHub portfolio showcasing **responsive web design**, **intuitive user experience**, and **modern JavaScript development**. This repository presents production-ready projects optimized for front-end performance, developer collaboration, and professional visibility on GitHub and LinkedIn.
+
+**SEO Keywords:** front-end development, HTML CSS JavaScript, responsive website, portfolio projects, Netlify deployment, GitHub profile, LinkedIn showcase.
 
 ---
 
