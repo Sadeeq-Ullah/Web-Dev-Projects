@@ -1,9 +1,22 @@
 # 💻 Tech Company Landing Page
 
-<p align="center">
-  <img src="main-pic.PNG" alt="Main view" width="400" />
-  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
-</p>
+<div align="center">
+  <table border="0" style="background: #1f2937; border-radius: 16px; padding: 35px; border-collapse: separate; border-spacing: 30px 0;">
+    <tr>
+      <td align="center" valign="middle">
+        <img src="main-pic.png" width="480" style="border: 3px solid #e5e7eb; border-radius: 12px; display: block;">
+        <br>
+        <b style="color: #e5e7eb; font-family: sans-serif; font-size: 14px;">Main View (Desktop)</b>
+      </td>
+
+  <td align="center" valign="middle">
+        <img src="mobile-view.PNG" width="220" style="border: 3px solid #e5e7eb; border-radius: 12px; display: block;">
+        <br>
+        <b style="color: #e5e7eb; font-family: sans-serif; font-size: 14px;">Mobile View</b>
+      </td>
+    </tr>
+  </table>
+</div>
 
 A corporate technology landing page template built with **HTML5 and CSS3**. This page is ideal for SaaS brands, startup websites, and tech service companies looking for a polished online presence.
 
