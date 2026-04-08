@@ -1,9 +1,20 @@
 # 🛒 Ecommerce Web (Furni)
 
-<p align="center">
-  <img src="main-pic.PNG" alt="Main view" width="400" />
-  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
-</p>
+<div align="center">
+  <table border="0" style="background: #111827; border-radius: 16px; padding: 30px; border-collapse: separate; border-spacing: 20px;">
+    <tr>
+      <td align="center" valign="middle">
+        <img src="main pic.PNG" width="560" style="border: 4px solid #374151; border-radius: 12px; display: block;">
+        <p style="margin-top: 15px; color: #f3f4f6; font-family: sans-serif; font-weight: 600;">Main View (Desktop)</p>
+      </td>
+      
+   <td align="center" valign="middle">
+        <img src="mobile-view.PNG" width="230" style="border: 4px solid #374151; border-radius: 12px; display: block;">
+        <p style="margin-top: 15px; color: #f3f4f6; font-family: sans-serif; font-weight: 600;">Mobile View</p>
+    </td>
+  </tr>
+  </table>
+</div>
 
 A responsive multi-page e-commerce website built with **vanilla JavaScript**, HTML5, and CSS3. This project is a strong example of a framework-free shopping experience with reusable components and data-driven content rendering.
 
