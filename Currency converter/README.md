@@ -1,22 +1,20 @@
 # 💱 Currency Converter Web App
 
-<!-- Single Frame using Table - Very Reliable -->
-<div align="center" style="margin: 40px 0;">
-  <table style="background: #1f2937; padding: 25px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); max-width: 950px;">
+<div align="center">
+  <table border="0" style="background: #1f2937; border-radius: 16px; padding: 35px; border-collapse: separate; border-spacing: 30px 0;">
     <tr>
-      <td align="center" style="padding: 20px;">
-        <img src="main-pic.PNG" 
-             alt="Main Desktop View" 
-             style="max-width: 350px; max-height: 340px; height: auto; border: 3px solid #e5e7eb; border-radius: 12px;">
-        <p style="margin-top: 12px; color: #e5e7eb; font-weight: 600;">Main View (Desktop)</p>
+      <td align="center" valign="middle">
+        <img src="main-pic.PNG" width="480" style="border: 3px solid #e5e7eb; border-radius: 12px; display: block;">
+        <br>
+        <b style="color: #e5e7eb; font-family: sans-serif; font-size: 15px;">Main View (Desktop)</b>
       </td>
-      <td align="center" style="padding: 20px;">
-        <img src="mobile-view.PNG" 
-             alt="Mobile View" 
-             style="max-width: 300px; max-height: 340px; height: auto; border: 3px solid #e5e7eb; border-radius: 12px;">
-        <p style="margin-top: 12px; color: #e5e7eb; font-weight: 600;">Mobile View</p>
-      </td>
-    </tr>
+      
+  <td align="center" valign="middle">
+        <img src="mobile-view.PNG" width="220" style="border: 3px solid #e5e7eb; border-radius: 12px; display: block;">
+        <br>
+        <b style="color: #e5e7eb; font-family: sans-serif; font-size: 15px;">Mobile View</b>
+  </td>
+  </tr>
   </table>
 </div>
 
