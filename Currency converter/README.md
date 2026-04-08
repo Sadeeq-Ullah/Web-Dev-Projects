@@ -1,9 +1,24 @@
 # 💱 Currency Converter Web App
 
-<p align="center">
-  <img src="main-pic.PNG" alt="Main view" width="400" />
-  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
-</p>
+<!-- Single Frame using Table - Very Reliable -->
+<div align="center" style="margin: 40px 0;">
+  <table style="background: #1f2937; padding: 25px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); max-width: 950px;">
+    <tr>
+      <td align="center" style="padding: 20px;">
+        <img src="main-pic.PNG" 
+             alt="Main Desktop View" 
+             style="max-width: 350px; max-height: 340px; height: auto; border: 3px solid #e5e7eb; border-radius: 12px;">
+        <p style="margin-top: 12px; color: #e5e7eb; font-weight: 600;">Main View (Desktop)</p>
+      </td>
+      <td align="center" style="padding: 20px;">
+        <img src="mobile-view.PNG" 
+             alt="Mobile View" 
+             style="max-width: 300px; max-height: 340px; height: auto; border: 3px solid #e5e7eb; border-radius: 12px;">
+        <p style="margin-top: 12px; color: #e5e7eb; font-weight: 600;">Mobile View</p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 A modern currency conversion tool built with **HTML5, CSS3, and vanilla JavaScript**. This application delivers reliable international currency exchange calculations using live rate data and a polished responsive interface.
 
