@@ -1,8 +1,8 @@
 # 💱 Currency Converter Web App
 
 <p align="center">
-  <img src="main-pic.png" alt="Main view" width="420" />
-  <img src="mobile-view.png" alt="Mobile view" width="420" />
+  <img src="main-pic.PNG" alt="Main view" width="400" />
+  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
 </p>
 
 A modern currency conversion tool built with **HTML5, CSS3, and vanilla JavaScript**. This application delivers reliable international currency exchange calculations using live rate data and a polished responsive interface.
@@ -32,9 +32,9 @@ currency converter, exchange rate calculator, foreign exchange tool, real-time c
 - **Font Awesome**: Provides icons for enhanced UI elements.
 - **FlagsAPI**: Supplies country flag images for visual currency representation.
 
-## API Integration
-- Utilizes the ExchangeRate-API (v6) for fetching conversion rates.
-- API Key: Integrated for seamless data retrieval (ensure key validity for production use).
+## 🚀 Getting Started
+1. Clone the repository.
+2. Open `index.html` in a web browser, or use a local server for full functionality.
 
 ## 💻 How to Use
 Open the live demo link above to explore the currency converter, or run the files locally with any static server for testing.

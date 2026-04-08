@@ -1,8 +1,8 @@
 # 📚 JS Documentation Page
 
 <p align="center">
-  <img src="main-pic.png" alt="Main view" width="420" />
-  <img src="mobile-view.png" alt="Mobile view" width="420" />
+  <img src="main-pic.PNG" alt="Main view" width="400" />
+  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
 </p>
 
 A clean, responsive technical documentation website built with **HTML5 and CSS3**. This project is designed to showcase developer documentation patterns, code-friendly layout, and accessible navigation for knowledge-sharing platforms.
@@ -26,7 +26,9 @@ technical documentation site, developer docs template, responsive documentation 
 *   **Structure:** HTML5
 *   **Styling:** CSS3 (Media Queries, Position: Fixed)
 
-## 💻 How to Use
+## � Getting Started
+1. Clone the repository.
+2. Open `index.html` in a web browser to view the documentation.
+
+## �💻 How to Use
 Navigate through the sections using the sidebar on the Live Site.
----
-*Developed as part of the Web Development Course.*

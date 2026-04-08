@@ -1,8 +1,8 @@
 # ✨ Serem Landing Page
 
 <p align="center">
-  <img src="main-pic.png" alt="Main view" width="420" />
-  <img src="mobile-view.png" alt="Mobile view" width="420" />
+  <img src="main-pic.PNG" alt="Main view" width="400" />
+  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
 </p>
 
 A high-conversion responsive landing page designed for modern product launches, SaaS offerings, and marketing campaigns. This project combines strong visual hierarchy with polished UI design.
@@ -26,7 +26,9 @@ landing page design, marketing website, responsive landing page, CTA optimizatio
 *   **Structure:** HTML5
 *   **Styling:** CSS3
 
-## 💻 How to Use
+## � Getting Started
+1. Clone the repository.
+2. Open `index.html` in a web browser to view the landing page.
+
+## �💻 How to Use
 Simply visit the Live Link to experience the design.
----
-*Developed as part of the Web Development Course.*

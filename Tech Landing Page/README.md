@@ -1,8 +1,8 @@
 # 💻 Tech Company Landing Page
 
 <p align="center">
-  <img src="main-pic.png" alt="Main view" width="420" />
-  <img src="mobile-view.png" alt="Mobile view" width="420" />
+  <img src="main-pic.PNG" alt="Main view" width="400" />
+  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
 </p>
 
 A corporate technology landing page template built with **HTML5 and CSS3**. This page is ideal for SaaS brands, startup websites, and tech service companies looking for a polished online presence.
@@ -26,7 +26,9 @@ technology landing page, corporate website template, SaaS landing page, responsi
 *   **Structure:** HTML5
 *   **Styling:** CSS3
 
-## 💻 How to Use
+## � Getting Started
+1. Clone the repository.
+2. Open `index.html` in a web browser to view the landing page.
+
+## �💻 How to Use
 Visit the Live Link to view the corporate layout.
----
-*Developed as part of the Web Development Course.*

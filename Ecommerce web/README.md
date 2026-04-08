@@ -1,8 +1,8 @@
 # 🛒 Ecommerce Web (Furni)
 
 <p align="center">
-  <img src="main-pic.png" alt="Main view" width="420" />
-  <img src="mobile-view.png" alt="Mobile view" width="420" />
+  <img src="main-pic.PNG" alt="Main view" width="400" />
+  <img src="mobile-view.PNG" alt="Mobile view" width="400" />
 </p>
 
 A responsive multi-page e-commerce website built with **vanilla JavaScript**, HTML5, and CSS3. This project is a strong example of a framework-free shopping experience with reusable components and data-driven content rendering.
@@ -16,7 +16,7 @@ This e-commerce template is ideal for front-end developers, UI/UX designers, and
 ## 🔍 SEO Keywords
 e-commerce website, shopping template, product catalog, responsive storefront, JavaScript e-commerce, vanilla JS web app.
 
-## ✨ Features
+## ✨ Key Features
 
 - **Dynamic Content Rendering**: Products, services, blogs, and testimonials are injected dynamically via JavaScript, keeping the HTML clean.
 - **Component Architecture**: Reusable `navbar` and `footer` components are loaded asynchronously, ensuring consistency across all pages.
