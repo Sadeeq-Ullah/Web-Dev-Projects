@@ -1,9 +1,14 @@
 # 💱 Currency Converter Web App
 
+<p align="center">
+  <img src="main-pic.png" alt="Main view" width="420" />
+  <img src="mobile-view.png" alt="Mobile view" width="420" />
+</p>
+
 A modern currency conversion tool built with **HTML5, CSS3, and vanilla JavaScript**. This application delivers reliable international currency exchange calculations using live rate data and a polished responsive interface.
 
 ## 🚀 Live Demo
-[Open the Currency Converter](https://currencyconvert122od4.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Site-2ea44f?style=for-the-badge&logo=netlify)](https://currencyconvert122od4.netlify.app/)
 
 ## 📌 Project Overview
 - Real-time foreign exchange calculation using **ExchangeRate-API**.
@@ -30,4 +35,7 @@ currency converter, exchange rate calculator, foreign exchange tool, real-time c
 ## API Integration
 - Utilizes the ExchangeRate-API (v6) for fetching conversion rates.
 - API Key: Integrated for seamless data retrieval (ensure key validity for production use).
+
+## 💻 How to Use
+Open the live demo link above to explore the currency converter, or run the files locally with any static server for testing.
 

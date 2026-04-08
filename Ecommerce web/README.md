@@ -1,9 +1,14 @@
 # 🛒 Ecommerce Web (Furni)
 
+<p align="center">
+  <img src="main-pic.png" alt="Main view" width="420" />
+  <img src="mobile-view.png" alt="Mobile view" width="420" />
+</p>
+
 A responsive multi-page e-commerce website built with **vanilla JavaScript**, HTML5, and CSS3. This project is a strong example of a framework-free shopping experience with reusable components and data-driven content rendering.
 
 ## 🚀 Live Demo
-[View the Furni E-Commerce Demo](https://sofastorewebsite321.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Store-2ea44f?style=for-the-badge&logo=netlify)](https://sofastorewebsite321.netlify.app/)
 
 ## 📌 Project Overview
 This e-commerce template is ideal for front-end developers, UI/UX designers, and startups that need a fast, lightweight online store.

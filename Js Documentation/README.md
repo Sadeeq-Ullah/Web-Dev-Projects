@@ -1,9 +1,14 @@
 # 📚 JS Documentation Page
 
+<p align="center">
+  <img src="main-pic.png" alt="Main view" width="420" />
+  <img src="mobile-view.png" alt="Mobile view" width="420" />
+</p>
+
 A clean, responsive technical documentation website built with **HTML5 and CSS3**. This project is designed to showcase developer documentation patterns, code-friendly layout, and accessible navigation for knowledge-sharing platforms.
 
 ## 🚀 Live Demo
-[Open the JS Documentation Site](https://jsdocument213.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Docs-2ea44f?style=for-the-badge&logo=netlify)](https://js-documentation7621.netlify.app/)
 
 ## 📌 Project Overview
 This documentation page replicates the structure of modern developer docs and is ideal for API references, learning platforms, and product knowledge bases.

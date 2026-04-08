@@ -1,9 +1,14 @@
 # 💻 Tech Company Landing Page
 
+<p align="center">
+  <img src="main-pic.png" alt="Main view" width="420" />
+  <img src="mobile-view.png" alt="Mobile view" width="420" />
+</p>
+
 A corporate technology landing page template built with **HTML5 and CSS3**. This page is ideal for SaaS brands, startup websites, and tech service companies looking for a polished online presence.
 
 ## 🚀 Live Demo
-[Launch the Tech Landing Page](https://techcomppage.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Page-2ea44f?style=for-the-badge&logo=netlify)](https://techcomppage.netlify.app/)
 
 ## 📌 Project Overview
 This project demonstrates a clean tech landing page design that prioritizes trust, services, and conversion.

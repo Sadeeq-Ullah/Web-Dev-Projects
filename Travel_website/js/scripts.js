@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
 
 const testiCard = document.querySelectorAll(".testimonial-card");
 const slider = document.querySelector(".testimonials__track");
-const cardsLength = testiCard.length; 
+const cardsLength = testiCard.length;
 let currentIdx = 0;
 function updateSlider() {
     slider.style.transition = 'transform 500ms ease';
@@ -36,12 +36,10 @@ function updateSlider() {
 }
 
 setInterval(() => {
-    currentIdx++; 
+    currentIdx++;
     if (currentIdx === cardsLength) {
-        setTimeout(() => {
-            slider.style.transition = 'none';
-            slider.style.transform = 'translateX(0)';
-        }, 5000);
+        slider.style.transition = 'none';
+        slider.style.transform = 'translateX(0)';
         currentIdx = 0;
     }
     updateSlider();

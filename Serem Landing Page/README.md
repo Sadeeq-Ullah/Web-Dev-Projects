@@ -1,9 +1,14 @@
 # ✨ Serem Landing Page
 
+<p align="center">
+  <img src="main-pic.png" alt="Main view" width="420" />
+  <img src="mobile-view.png" alt="Mobile view" width="420" />
+</p>
+
 A high-conversion responsive landing page designed for modern product launches, SaaS offerings, and marketing campaigns. This project combines strong visual hierarchy with polished UI design.
 
 ## 🚀 Live Demo
-[Visit the Serem Landing Page](https://seremlanpage.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Serem-2ea44f?style=for-the-badge&logo=netlify)](https://seremlanpage.netlify.app/)
 
 ## 📌 Project Overview
 Serem is a marketing-focused landing page built to capture attention and encourage action through clear content sections and strategic CTAs.

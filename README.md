@@ -2,11 +2,6 @@
 
 ### Modern front-end web applications built with HTML5, CSS3, JavaScript, and Netlify deployment.
 
-[![Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/Sadeeq-Ullah)
-[![Live Demos](https://img.shields.io/badge/Live%20Demos-View%20All-00C7B7?style=for-the-badge&logo=netlify)](https://github.com/Sadeeq-Ullah?tab=repositories)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sadeeq-khilji/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-Expert-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
-
 ---
 
 ## 📌 Summary
@@ -51,7 +46,6 @@ A professional portfolio of production-grade web applications demonstrating expe
 **Real-Time Global Currency Conversion System**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-2ea44f?style=for-the-badge&logo=netlify)](https://currencyconvert122od4.netlify.app/)
-[![API](https://img.shields.io/badge/API-ExchangeRate--v6-1e3c72?style=flat-square)](https://exchangerate-api.com/)
 
 **Business Value:** Enables instant, accurate financial conversions for travel, e-commerce, and international business operations.
 
@@ -69,7 +63,6 @@ A professional portfolio of production-grade web applications demonstrating expe
 **Scalable Multi-Page Shopping Platform**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Shop%20Now-2ea44f?style=for-the-badge&logo=netlify)](https://sofastorewebsite321.netlify.app/)
-[![Architecture](https://img.shields.io/badge/Architecture-Component%20Based-4c1e3f?style=flat-square)]()
 
 **Business Value:** A lightweight, maintainable e-commerce solution without heavy frameworks—ideal for startups and rapid deployment.
 
@@ -86,7 +79,7 @@ A professional portfolio of production-grade web applications demonstrating expe
 ### 3. JS Documentation Hub 📚
 **Professional Technical Documentation System**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Read%20Docs-2ea44f?style=for-the-badge&logo=netlify)](https://jsdocument213.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Docs-2ea44f?style=for-the-badge&logo=netlify)](https://js-documentation7621.netlify.app/)
 
 **Business Value:** Enterprise-grade documentation structure—similar to MDN or React docs—essential for software teams and technical products.
 
@@ -137,7 +130,7 @@ A professional portfolio of production-grade web applications demonstrating expe
 ### 6. Travel Booking Platform 🌍
 *Coming Soon — Under Active Development*
 
-[![Status](https://img.shields.io/badge/Status-In%20Development-FFA500?style=for-the-badge)]()
+![Status](https://img.shields.io/badge/Status-In%20Development-FFA500?style=for-the-badge)
 
 **Planned Features:**
 - 🏨 Hotel booking with real-time availability
@@ -146,7 +139,7 @@ A professional portfolio of production-grade web applications demonstrating expe
 - 💳 Secure payment gateway integration
 - 📱 Offline-capable mobile experience
 
-*Expected Launch: Q2 2026*
+*Expected Launch: June 2026*
 
 ---
 
@@ -179,11 +172,11 @@ I build software that businesses can deploy with confidence:
 
 | Project | Live Demo |
 |---------|----------|
-| **Currency Converter** | [![Live Demo](https://img.shields.io/badge/Try%20Converter-2ea44f?style=flat-square&logo=netlify)](https://currencyconvert122od4.netlify.app/) |
-| **Furni E-Commerce** | [![Live Demo](https://img.shields.io/badge/Shop%20Now-2ea44f?style=flat-square&logo=netlify)](https://sofastorewebsite321.netlify.app/) |
-| **JS Documentation** | [![Live Demo](https://img.shields.io/badge/Read%20Docs-2ea44f?style=flat-square&logo=netlify)](https://jsdocument213.netlify.app/) |
-| **Serem Landing Page** | [![Live Demo](https://img.shields.io/badge/View%20Serem-2ea44f?style=flat-square&logo=netlify)](https://seremlanpage.netlify.app/) |
-| **Tech Company Page** | [![Live Demo](https://img.shields.io/badge/Launch%20Site-2ea44f?style=flat-square&logo=netlify)](https://techcomppage.netlify.app/) |
+| **Currency Converter** | [![Live Demo](https://img.shields.io/badge/Try%20Converter-2ea44f?style=for-the-badge&logo=netlify&logoColor=white)](https://currencyconvert122od4.netlify.app/) |
+| **Furni E-Commerce** | [![Live Demo](https://img.shields.io/badge/Shop%20Now-2ea44f?style=for-the-badge&logo=netlify&logoColor=white)](https://sofastorewebsite321.netlify.app/) |
+| **JS Documentation** | [![Live Demo](https://img.shields.io/badge/Read%20Docs-2ea44f?style=for-the-badge&logo=netlify&logoColor=white)](https://js-documentation7621.netlify.app/) |
+| **Serem Landing Page** | [![Live Demo](https://img.shields.io/badge/View%20Serem-2ea44f?style=for-the-badge&logo=netlify&logoColor=white)](https://seremlanpage.netlify.app/) |
+| **Tech Company Page** | [![Live Demo](https://img.shields.io/badge/Launch%20Site-2ea44f?style=for-the-badge&logo=netlify&logoColor=white)](https://techcomppage.netlify.app/) |
 
 ---
 
